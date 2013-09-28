@@ -33,6 +33,7 @@
                                     <action selector="editingDidBegin:" destination="vXZ-lx-hvc" eventType="editingDidBegin" id="Wnv-3H-Ded"/>
                                     <action selector="keystrokePressed:" destination="vXZ-lx-hvc" eventType="editingChanged" id="6sI-1n-3mT"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="h3E-Nf-3vL"/>
+                                    <outletCollection property="gestureRecognizers" destination="ScE-Rb-LwF" appends="YES" id="K00-on-zCw"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=" ax²" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjT-Et-F78" userLabel="aValue Label">
@@ -62,6 +63,7 @@
                                     <action selector="editingDidBegin:" destination="vXZ-lx-hvc" eventType="editingDidBegin" id="V8C-rF-Qy8"/>
                                     <action selector="keystrokePressed:" destination="vXZ-lx-hvc" eventType="editingChanged" id="Ua6-pp-FTo"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="gfs-I7-m2u"/>
+                                    <outletCollection property="gestureRecognizers" destination="Idw-iF-Z3V" appends="YES" id="2UV-yT-i4k"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=" bx" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biZ-yc-Rxd" userLabel="bValue Label">
@@ -91,6 +93,7 @@
                                     <action selector="editingDidBegin:" destination="vXZ-lx-hvc" eventType="editingDidBegin" id="N2H-TV-UvX"/>
                                     <action selector="keystrokePressed:" destination="vXZ-lx-hvc" eventType="editingChanged" id="5M8-tZ-UvV"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="Ne8-RJ-zH1"/>
+                                    <outletCollection property="gestureRecognizers" destination="mOB-o2-1el" appends="YES" id="yWu-PX-TPl"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=" c" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBp-Zj-h1j" userLabel="cValue Label">
@@ -350,12 +353,28 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="ScE-Rb-LwF" userLabel="aValue Gesture Recognizer">
+                    <connections>
+                        <action selector="handleSwipeGesture:" destination="vXZ-lx-hvc" id="Ueg-eC-RGy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Idw-iF-Z3V" userLabel="bValue Gesture Recognizer">
+                    <connections>
+                        <action selector="handleSwipeGesture:" destination="vXZ-lx-hvc" id="KU0-Re-5zt"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="mOB-o2-1el" userLabel="cValue Gesture Recognizer">
+                    <connections>
+                        <action selector="handleSwipeGesture:" destination="vXZ-lx-hvc" id="7UD-Yg-gzw"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="33" y="2"/>
         </scene>
     </scenes>
     <resources>
         <image name="EquationBackground" width="320" height="170"/>
+        <image name="RootsBackground" width="320" height="170"/>
         <image name="RootsBackground" width="320" height="170"/>
         <image name="SolveButton" width="299" height="43"/>
     </resources>

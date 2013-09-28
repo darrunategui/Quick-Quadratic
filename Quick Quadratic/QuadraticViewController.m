@@ -268,6 +268,16 @@
     [self.scroller setContentOffset:CGPointMake(newpage, 0) animated:YES];
 }
 
+- (IBAction)textFieldSwiped:(UISwipeGestureRecognizer *)sender
+{
+    UITextField *swipedView = (UITextField *)sender.view; // get a reference to the swiped view
+    swipedView.text = @""; // clear the text
+    self.solveButton.enabled = NO; // disable the solve button since one of the fields is now empty
+    [swipedView becomeFirstResponder]; // make the swiped TextField the first responder
+
+}
+
+
 #pragma mark - view handling
 
 - (void)viewDidLoad
