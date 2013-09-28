@@ -21,6 +21,10 @@
 		9A5AB6F317F65017000BF5C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5AB6D517F65017000BF5C3 /* UIKit.framework */; };
 		9A5AB6FB17F65017000BF5C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A5AB6F917F65017000BF5C3 /* InfoPlist.strings */; };
 		9A5AB6FD17F65017000BF5C3 /* Quick_QuadraticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AB6FC17F65017000BF5C3 /* Quick_QuadraticTests.m */; };
+		9A5AB70717F65025000BF5C3 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5AB70617F65024000BF5C3 /* iAd.framework */; };
+		9A5AB70C17F6557D000BF5C3 /* NumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AB70A17F6557D000BF5C3 /* NumberPad.m */; };
+		9A5AB70D17F6557D000BF5C3 /* NumberPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5AB70B17F6557D000BF5C3 /* NumberPad.xib */; };
+		9A5AB71117F65625000BF5C3 /* QuadraticSolve.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AB71017F65625000BF5C3 /* QuadraticSolve.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		9A5AB6F817F65017000BF5C3 /* Quick QuadraticTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quick QuadraticTests-Info.plist"; sourceTree = "<group>"; };
 		9A5AB6FA17F65017000BF5C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A5AB6FC17F65017000BF5C3 /* Quick_QuadraticTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quick_QuadraticTests.m; sourceTree = "<group>"; };
+		9A5AB70617F65024000BF5C3 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		9A5AB70917F6557D000BF5C3 /* NumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberPad.h; sourceTree = "<group>"; };
+		9A5AB70A17F6557D000BF5C3 /* NumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberPad.m; sourceTree = "<group>"; };
+		9A5AB70B17F6557D000BF5C3 /* NumberPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberPad.xib; sourceTree = "<group>"; };
+		9A5AB70F17F65625000BF5C3 /* QuadraticSolve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadraticSolve.h; sourceTree = "<group>"; };
+		9A5AB71017F65625000BF5C3 /* QuadraticSolve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadraticSolve.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5AB70717F65025000BF5C3 /* iAd.framework in Frameworks */,
 				9A5AB6D417F65017000BF5C3 /* CoreGraphics.framework in Frameworks */,
 				9A5AB6D617F65017000BF5C3 /* UIKit.framework in Frameworks */,
 				9A5AB6D217F65017000BF5C3 /* Foundation.framework in Frameworks */,
@@ -101,6 +112,7 @@
 		9A5AB6D017F65017000BF5C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A5AB70617F65024000BF5C3 /* iAd.framework */,
 				9A5AB6D117F65017000BF5C3 /* Foundation.framework */,
 				9A5AB6D317F65017000BF5C3 /* CoreGraphics.framework */,
 				9A5AB6D517F65017000BF5C3 /* UIKit.framework */,
@@ -112,6 +124,8 @@
 		9A5AB6D717F65017000BF5C3 /* Quick Quadratic */ = {
 			isa = PBXGroup;
 			children = (
+				9A5AB70E17F65617000BF5C3 /* Solve */,
+				9A5AB70817F6555B000BF5C3 /* Number Pad */,
 				9A5AB6E017F65017000BF5C3 /* QuadraticAppDelegate.h */,
 				9A5AB6E117F65017000BF5C3 /* QuadraticAppDelegate.m */,
 				9A5AB6E317F65017000BF5C3 /* Main.storyboard */,
@@ -150,6 +164,25 @@
 				9A5AB6F917F65017000BF5C3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A5AB70817F6555B000BF5C3 /* Number Pad */ = {
+			isa = PBXGroup;
+			children = (
+				9A5AB70917F6557D000BF5C3 /* NumberPad.h */,
+				9A5AB70A17F6557D000BF5C3 /* NumberPad.m */,
+				9A5AB70B17F6557D000BF5C3 /* NumberPad.xib */,
+			);
+			name = "Number Pad";
+			sourceTree = "<group>";
+		};
+		9A5AB70E17F65617000BF5C3 /* Solve */ = {
+			isa = PBXGroup;
+			children = (
+				9A5AB70F17F65625000BF5C3 /* QuadraticSolve.h */,
+				9A5AB71017F65625000BF5C3 /* QuadraticSolve.m */,
+			);
+			name = Solve;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5AB70D17F6557D000BF5C3 /* NumberPad.xib in Resources */,
 				9A5AB6EA17F65017000BF5C3 /* Images.xcassets in Resources */,
 				9A5AB6DC17F65017000BF5C3 /* InfoPlist.strings in Resources */,
 				9A5AB6E517F65017000BF5C3 /* Main.storyboard in Resources */,
@@ -250,8 +284,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5AB70C17F6557D000BF5C3 /* NumberPad.m in Sources */,
 				9A5AB6DE17F65017000BF5C3 /* main.m in Sources */,
 				9A5AB6E817F65017000BF5C3 /* QuadraticViewController.m in Sources */,
+				9A5AB71117F65625000BF5C3 /* QuadraticSolve.m in Sources */,
 				9A5AB6E217F65017000BF5C3 /* QuadraticAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
