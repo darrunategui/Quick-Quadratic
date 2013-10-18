@@ -20,7 +20,7 @@
 
 @implementation QuadraticViewController
 
-@synthesize scroller = _scroller;
+@synthesize iPhoneScroller = _iPhoneScroller;
 
 - (QuadraticSolve *)quadratic
 {
@@ -232,7 +232,13 @@
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    self.scrollPosition = self.scroller.contentOffset;
+    UIScrollView *scrollView = nil;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        scrollView = self.iPadScroller;
+    else
+        scrollView = self.iPhoneScroller;
+    
+    self.scrollPosition = scrollView.contentOffset;
 }
 /* Gets called after the view lays out its subviews */
 /* When a user finishes viewing an ad */
@@ -240,15 +246,24 @@
 {
     [super viewDidLayoutSubviews];
     // only reshow the ad if a banner is successfully loaded
-    if (self.adBanner.bannerLoaded) {
+    if (self.adBanner.bannerLoaded)
+    {
         self.adBanner.frame = CGRectOffset(self.adBanner.frame, 0, -self.adBanner.frame.size.height);
         self.bannerIsVisible = YES;
     }
     
     // Set the content size of the respective scroll views
     // We need to reset the content size whenever subviews get layed out
-    [self.scroller setContentSize:CGSizeMake(([[UIScreen mainScreen] bounds].size.width)*3, self.scroller.frame.size.height)];
-    self.scroller.contentOffset = self.scrollPosition;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        [self.iPadScroller setContentSize:CGSizeMake(384*3, self.iPadScroller.frame.size.height)];
+        self.iPadScroller.contentOffset = self.scrollPosition;
+    }
+    else
+    {
+        [self.iPhoneScroller setContentSize:CGSizeMake( [[UIScreen mainScreen] bounds].size.width*3, self.iPhoneScroller.frame.size.height)];
+        self.iPhoneScroller.contentOffset = self.scrollPosition;
+    }
 }
 
 #pragma mark - Scroll View page handling
@@ -264,8 +279,8 @@
 
 /* scroll the scrollView programatically when the PageControl is pressed */
 - (IBAction)pageControlPressed:(UIPageControl *)sender {
-    CGFloat newpage = sender.currentPage*self.scroller.frame.size.width;
-    [self.scroller setContentOffset:CGPointMake(newpage, 0) animated:YES];
+    CGFloat newpage = sender.currentPage*self.iPhoneScroller.frame.size.width;
+    [self.iPhoneScroller setContentOffset:CGPointMake(newpage, 0) animated:YES];
 }
 
 - (IBAction)textFieldSwiped:(UISwipeGestureRecognizer *)sender
@@ -286,7 +301,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.solutionOne.adjustsFontSizeToFitWidth = YES;
     self.solutionTwo.adjustsFontSizeToFitWidth = YES;
-    //self.aValue.adjustsFontSizeToFitWidth = YES;
+    self.aValue.adjustsFontSizeToFitWidth = YES;
     self.bValue.adjustsFontSizeToFitWidth = YES;
     self.cValue.adjustsFontSizeToFitWidth = YES;
     
@@ -303,23 +318,12 @@
     /* solve buttons should be disabled at first */
     self.solveButton.enabled = NO;
     
-    //self.view.backgroundColor = [UIColor clearColor];
-    
-    // set the view to transparent
-    //self..backgroundColor = [UIColor clearColor];
-    
-    // Create a UIToolbar thhat is the size of the screen.  UIToolbar will give us the blur effect
-    //UIToolbar* backgroundToolbar = [[UIToolbar alloc] initWithFrame:self.view.frame];
-    //backgroundToolbar.barStyle = UIBarStyleBlackTranslucent;
-    
-    // Add the UIToolbar behind our view to give the blur effect to the entire screen.
-    //[self.view insertSubview:backgroundToolbar atIndex:0];
 }
 
 - (void)viewDidUnload
 {
     [self setAdBanner:nil];
-    [self setScroller:nil];
+    [self setIPhoneScroller:nil];
     [self setMinusBLabel:nil];
     [self setDiscriminentLabel:nil];
     [self setTwoALabel:nil];
@@ -374,7 +378,17 @@
 /* sets the scroll view content offset to zero when there is an error in the input */
 - (void)resetScrollViewContentOffset
 {
-    self.scroller.contentOffset = CGPointZero;
+    UIScrollView *scrollView = nil;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        scrollView = self.iPadScroller;
+    }
+    else
+    {
+        scrollView = self.iPadScroller;
+    }
+    
+    scrollView.contentOffset = CGPointZero;
     self.pageControl.currentPage = 0;
 }
 

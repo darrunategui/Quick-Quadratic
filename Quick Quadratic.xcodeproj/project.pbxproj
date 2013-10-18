@@ -25,6 +25,7 @@
 		9A5AB70C17F6557D000BF5C3 /* NumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AB70A17F6557D000BF5C3 /* NumberPad.m */; };
 		9A5AB70D17F6557D000BF5C3 /* NumberPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5AB70B17F6557D000BF5C3 /* NumberPad.xib */; };
 		9A5AB71117F65625000BF5C3 /* QuadraticSolve.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AB71017F65625000BF5C3 /* QuadraticSolve.m */; };
+		9AFCB5BF17F7241800D38F15 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFCB5BE17F7241800D38F15 /* Main-iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		9A5AB70B17F6557D000BF5C3 /* NumberPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberPad.xib; sourceTree = "<group>"; };
 		9A5AB70F17F65625000BF5C3 /* QuadraticSolve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadraticSolve.h; sourceTree = "<group>"; };
 		9A5AB71017F65625000BF5C3 /* QuadraticSolve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadraticSolve.m; sourceTree = "<group>"; };
+		9AFCB5BE17F7241800D38F15 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Main-iPad.storyboard"; path = "iPad/Main-iPad.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		9A5AB6D717F65017000BF5C3 /* Quick Quadratic */ = {
 			isa = PBXGroup;
 			children = (
+				9AFCB5BD17F7234900D38F15 /* iPad */,
 				9A5AB70E17F65617000BF5C3 /* Solve */,
 				9A5AB70817F6555B000BF5C3 /* Number Pad */,
 				9A5AB6E017F65017000BF5C3 /* QuadraticAppDelegate.h */,
@@ -185,6 +188,14 @@
 			name = Solve;
 			sourceTree = "<group>";
 		};
+		9AFCB5BD17F7234900D38F15 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				9AFCB5BE17F7241800D38F15 /* Main-iPad.storyboard */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,6 +244,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "David Arrunategui";
 				TargetAttributes = {
+					9A5AB6CD17F65017000BF5C3 = {
+						DevelopmentTeam = 8U7X37UT7E;
+					};
 					9A5AB6EE17F65017000BF5C3 = {
 						TestTargetID = 9A5AB6CD17F65017000BF5C3;
 					};
@@ -262,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AFCB5BF17F7241800D38F15 /* Main-iPad.storyboard in Resources */,
 				9A5AB70D17F6557D000BF5C3 /* NumberPad.xib in Resources */,
 				9A5AB6EA17F65017000BF5C3 /* Images.xcassets in Resources */,
 				9A5AB6DC17F65017000BF5C3 /* InfoPlist.strings in Resources */,
@@ -415,10 +430,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quick Quadratic/Quick Quadratic-Prefix.pch";
 				INFOPLIST_FILE = "Quick Quadratic/Quick Quadratic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -428,10 +446,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quick Quadratic/Quick Quadratic-Prefix.pch";
 				INFOPLIST_FILE = "Quick Quadratic/Quick Quadratic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -497,6 +518,7 @@
 				9A5AB70217F65017000BF5C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A5AB70317F65017000BF5C3 /* Build configuration list for PBXNativeTarget "Quick QuadraticTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +527,7 @@
 				9A5AB70517F65017000BF5C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

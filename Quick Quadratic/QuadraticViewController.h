@@ -41,7 +41,8 @@
 
 @property (strong, nonatomic) IBOutlet ADBannerView *adBanner;
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scroller;
+@property (weak, nonatomic) IBOutlet UIScrollView *iPhoneScroller;
+@property (weak, nonatomic) IBOutlet UIScrollView *iPadScroller;
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
