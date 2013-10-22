@@ -13,5 +13,4 @@
 // The one and only Numberpad instance you should ever need:
 + (NumberPad *)defaultNumberPad;
 
-
 @end

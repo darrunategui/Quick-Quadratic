@@ -9,6 +9,7 @@
 #import "QuadraticViewController.h"
 #import "QuadraticSolve.h"
 #import "NumberPad.h"
+#import "iPadNumberPad.h"
 
 @interface QuadraticViewController ()
 
@@ -311,10 +312,19 @@
     self.vertex.adjustsFontSizeToFitWidth = YES;
     self.yIntercept.adjustsFontSizeToFitWidth = YES;
     
-    /* use the iPhone NumberPad */
-    self.aValue.inputView = [NumberPad defaultNumberPad].view;
-    self.bValue.inputView = [NumberPad defaultNumberPad].view;
-    self.cValue.inputView = [NumberPad defaultNumberPad].view;
+    /* use the correct NumberPad */
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        self.aValue.inputView = [iPadNumberPad defaultNumberPad].view;
+        self.bValue.inputView = [iPadNumberPad defaultNumberPad].view;
+        self.cValue.inputView = [iPadNumberPad defaultNumberPad].view;
+    }
+    else
+    {
+        self.aValue.inputView = [NumberPad defaultNumberPad].view;
+        self.bValue.inputView = [NumberPad defaultNumberPad].view;
+        self.cValue.inputView = [NumberPad defaultNumberPad].view;
+    }
     /* solve buttons should be disabled at first */
     self.solveButton.enabled = NO;
     
@@ -355,7 +365,7 @@
 
 - (void)changeSolutionsAlphaTo:(CGFloat)alphaValue
 {
-    [UIView animateWithDuration:0.2 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         self.rootsBackgroundImage.alpha = alphaValue;
         self.solutionOneTitle.alpha = alphaValue;
         self.solutionOne.alpha = alphaValue;

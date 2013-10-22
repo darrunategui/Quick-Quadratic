@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="iPadNumberPad">
+            <connections>
+                <outlet property="backgroundView" destination="SZq-9h-5Uj" id="Zvh-cc-04T"/>
+                <outlet property="keysView" destination="pkj-Vu-fhw" id="O6X-ic-VhX"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="323"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="SZq-9h-5Uj" userLabel="Background View">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="323"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="pkj-Vu-fhw" userLabel="Keys View">
+                            <rect key="frame" x="289.5" y="0.0" width="443" height="323"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZVP-yY-eBt">
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="7">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="haN-Km-vBh"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="Q7b-fz-Rot"/>
+                                        <action selector="numberPadDigitPressed:" destination="-1" eventType="touchUpInside" id="Hff-Wf-WlF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bSi-fb-NsO">
+                                    <rect key="frame" x="111" y="0.0" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="8">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="OiO-tx-lJe"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="tSX-fH-ZSb"/>
+                                        <action selector="numberPadDigitPressed:" destination="-1" eventType="touchUpInside" id="ioh-Ii-ZPi"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oMB-kx-3mx">
+                                    <rect key="frame" x="222" y="0.0" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="9">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="dyG-Qk-LGS"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="2na-7K-kgb"/>
+                                        <action selector="numberPadDigitPressed:" destination="-1" eventType="touchUpInside" id="Vas-Hn-yZY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ypK-Kg-wD6">
+                                    <rect key="frame" x="0.0" y="81" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="4">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="rj9-rg-qS9"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="cr0-kJ-puI"/>
+                                        <action selector="numberPadDigitPressed:" destination="-1" eventType="touchUpInside" id="iTI-1R-eMh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EtO-ut-OnS">
+                                    <rect key="frame" x="111" y="81" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="5">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="fvi-9Q-LsH"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="cuz-je-mRE"/>
+                                        <action selector="numberPadDigitPressed:" destination="-1" eventType="touchUpInside" id="Nkf-FI-3tj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f0S-Zg-SOG">
+                                    <rect key="frame" x="222" y="81" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="6">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="EMe-1n-WsC"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="Rxg-1E-R1l"/>
+                                        <action selector="numberPadDigitPressed:" destination="-1" eventType="touchUpInside" id="aCn-xP-BDx"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ffl-nx-SdW">
+                                    <rect key="frame" x="0.0" y="162" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="v0t-lx-rve"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="PDH-EW-Bhj"/>
+                                        <action selector="numberPadDigitPressed:" destination="-1" eventType="touchUpInside" id="GFN-SS-wgP"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JM3-GY-hsX">
+                                    <rect key="frame" x="111" y="162" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="2">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="kgK-xi-u1T"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="sMc-tT-Kp1"/>
+                                        <action selector="numberPadDigitPressed:" destination="-1" eventType="touchUpInside" id="kq9-8o-dRi"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uJc-x2-hxD">
+                                    <rect key="frame" x="222" y="162" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="3">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="FMK-x8-WqQ"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="byW-Ok-pgL"/>
+                                        <action selector="numberPadDigitPressed:" destination="-1" eventType="touchUpInside" id="qa0-uT-5i0"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UHy-lC-OYx">
+                                    <rect key="frame" x="0.0" y="243" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title=".">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="QGQ-YS-Ica"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="8T8-EL-xg4"/>
+                                        <action selector="numberPadDigitPressed:" destination="-1" eventType="touchUpInside" id="BJd-da-Ate"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fnp-Yb-eIZ">
+                                    <rect key="frame" x="111" y="243" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="0">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="EKx-oC-tz4"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="z9S-WC-GbK"/>
+                                        <action selector="numberPadDigitPressed:" destination="-1" eventType="touchUpInside" id="6fI-az-muo"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="muK-4V-ytd">
+                                    <rect key="frame" x="222" y="243" width="110" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="C">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="3MB-sW-fwf"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="J2x-2i-HYe"/>
+                                        <action selector="numberPadClearPressed:" destination="-1" eventType="touchUpInside" id="LDg-Gr-KF6"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lsg-Vq-Dpf">
+                                    <rect key="frame" x="333" y="0.0" width="110" height="161"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="10"/>
+                                    <state key="normal" title="⬅">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="8DA-2Q-KLt"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="ts7-g5-6j0"/>
+                                        <action selector="numberPadBackSpacePressedDown:" destination="-1" eventType="touchDown" id="3YQ-oo-16d"/>
+                                        <action selector="numberPadDeletePressEnded:" destination="-1" eventType="touchUpOutside" id="TZW-zX-8VB"/>
+                                        <action selector="numberPadDeletePressEnded:" destination="-1" eventType="touchUpInside" id="YGj-bp-8HM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZE6-m9-NcJ">
+                                    <rect key="frame" x="333" y="162" width="110" height="161"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.88663903060000004" green="0.88663903060000004" blue="0.88663903060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="55"/>
+                                    <state key="normal" title="+/-">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonPressedDown:" destination="-1" eventType="touchDown" id="KLH-7r-MaO"/>
+                                        <action selector="buttonPressedUp:" destination="-1" eventType="touchUpInside" id="Rz5-A9-rPw"/>
+                                        <action selector="numberPadSignChangePressed:" destination="-1" eventType="touchUpInside" id="ljF-hm-Ssi"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backspace" id="e5J-pM-ucR">
+                                    <rect key="frame" x="352" y="62" width="64" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Backspace" width="64" height="35"/>
+    </resources>
+</document>

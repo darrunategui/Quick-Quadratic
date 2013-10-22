@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="SRg-1g-RWY">
     <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
@@ -125,7 +126,7 @@
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u2V-J0-aej" userLabel="Left Answer View">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="295"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" image="RootsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="fQP-Q2-FAS" userLabel="Answer Background Image View">
+                                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="RootsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="fQP-Q2-FAS" userLabel="Answer Background Image View">
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="295"/>
                                             </imageView>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="Solution 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLq-74-dwb" userLabel="Solution One Title Label">
@@ -187,7 +188,7 @@
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fPp-Dr-B1o" userLabel="Right Answer View">
                                         <rect key="frame" x="384" y="0.0" width="384" height="295"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" image="EquationBackground" translatesAutoresizingMaskIntoConstraints="NO" id="d7I-c3-Wdl" userLabel="Equation Background Image View">
+                                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="EquationBackground" translatesAutoresizingMaskIntoConstraints="NO" id="d7I-c3-Wdl" userLabel="Equation Background Image View">
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="295"/>
                                             </imageView>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="Quadratic Equation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLZ-OA-cvR" userLabel="Equation Title">
@@ -250,7 +251,7 @@
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giQ-KG-XnP" userLabel="Vertex/Y-Intercept Answer View">
                                         <rect key="frame" x="768" y="0.0" width="384" height="295"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" image="RootsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ZR8-2R-hkH" userLabel="Vertex Background Image View">
+                                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="RootsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ZR8-2R-hkH" userLabel="Vertex Background Image View">
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="295"/>
                                             </imageView>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="Vertex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8J-Ec-Hfg" userLabel="Vertex Title Label">
@@ -313,6 +314,7 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="u2V-J0-aej" secondAttribute="bottom" id="0Ie-RL-o6L"/>
                                     <constraint firstItem="fPp-Dr-B1o" firstAttribute="top" secondItem="euj-vD-dd0" secondAttribute="top" id="2dB-7X-7cx"/>
+                                    <constraint firstItem="u2V-J0-aej" firstAttribute="leading" secondItem="euj-vD-dd0" secondAttribute="leading" id="BbU-qG-d3t"/>
                                     <constraint firstItem="u2V-J0-aej" firstAttribute="top" secondItem="euj-vD-dd0" secondAttribute="top" id="Du7-qU-8gh"/>
                                     <constraint firstAttribute="bottom" secondItem="fPp-Dr-B1o" secondAttribute="bottom" id="Zf5-8F-aZ5"/>
                                     <constraint firstItem="giQ-KG-XnP" firstAttribute="top" secondItem="euj-vD-dd0" secondAttribute="top" id="all-Ni-hi4"/>
@@ -322,12 +324,6 @@
                                     <constraint firstAttribute="height" constant="295" id="wtv-45-MdW"/>
                                 </constraints>
                             </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="OxA-6L-smm">
-                                <rect key="frame" x="365" y="589" width="39" height="37"/>
-                                <connections>
-                                    <action selector="pageControlPressed:" destination="SRg-1g-RWY" eventType="valueChanged" id="Vfy-Q3-I45"/>
-                                </connections>
-                            </pageControl>
                             <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="yFs-fB-Fmk" userLabel="New Banner View">
                                 <rect key="frame" x="0.0" y="1024" width="480" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -340,7 +336,6 @@
                         <constraints>
                             <constraint firstItem="w9f-GB-Jp0" firstAttribute="top" secondItem="Nhz-Ed-PdQ" secondAttribute="top" id="2nM-mH-o7s"/>
                             <constraint firstAttribute="trailing" secondItem="euj-vD-dd0" secondAttribute="trailing" id="5N2-gC-SQV"/>
-                            <constraint firstItem="OxA-6L-smm" firstAttribute="centerX" secondItem="Nhz-Ed-PdQ" secondAttribute="centerX" id="6IY-l7-ghX"/>
                             <constraint firstItem="1Lm-Wk-e0a" firstAttribute="top" secondItem="esS-mx-EKG" secondAttribute="bottom" constant="1" id="79S-0C-i2f"/>
                             <constraint firstAttribute="trailing" secondItem="6iZ-kp-wzS" secondAttribute="trailing" id="7JF-aU-MBG"/>
                             <constraint firstItem="Eae-t2-2ix" firstAttribute="leading" secondItem="NVI-gf-RTg" secondAttribute="leading" id="9fn-5q-wnI"/>
@@ -371,7 +366,6 @@
                             <constraint firstItem="1Lm-Wk-e0a" firstAttribute="bottom" secondItem="Eae-t2-2ix" secondAttribute="bottom" id="o6i-he-YZZ"/>
                             <constraint firstAttribute="trailing" secondItem="1Lm-Wk-e0a" secondAttribute="trailing" id="pIc-RP-InB"/>
                             <constraint firstItem="sPL-U7-2eb" firstAttribute="leading" secondItem="w9f-GB-Jp0" secondAttribute="trailing" id="pXr-5A-2yd"/>
-                            <constraint firstItem="OxA-6L-smm" firstAttribute="top" secondItem="euj-vD-dd0" secondAttribute="bottom" constant="-7" id="qiG-FF-FPL"/>
                             <constraint firstItem="8eY-ZZ-ycF" firstAttribute="top" secondItem="Nhz-Ed-PdQ" secondAttribute="bottom" constant="4" id="tDG-Ri-Sg6"/>
                             <constraint firstItem="6bm-BA-16G" firstAttribute="top" secondItem="NVI-gf-RTg" secondAttribute="top" constant="20" id="wCQ-FY-BdR"/>
                             <constraint firstItem="Nhz-Ed-PdQ" firstAttribute="top" secondItem="1Lm-Wk-e0a" secondAttribute="bottom" constant="1" id="xOG-xF-MKC"/>
@@ -393,7 +387,6 @@
                         <outlet property="equationTitle" destination="nLZ-OA-cvR" id="H1c-Sf-LH7"/>
                         <outlet property="iPadScroller" destination="euj-vD-dd0" id="7Qb-AF-Q2p"/>
                         <outlet property="minusBLabel" destination="2ra-yL-EL7" id="FGI-Ak-D7g"/>
-                        <outlet property="pageControl" destination="OxA-6L-smm" id="eIu-gJ-NjK"/>
                         <outlet property="rootsBackgroundImage" destination="fQP-Q2-FAS" id="j4j-gO-GQ2"/>
                         <outlet property="solutionOne" destination="Lgu-Cr-eSt" id="I9Q-g6-PNp"/>
                         <outlet property="solutionOneTitle" destination="pLq-74-dwb" id="JBy-OQ-5qu"/>

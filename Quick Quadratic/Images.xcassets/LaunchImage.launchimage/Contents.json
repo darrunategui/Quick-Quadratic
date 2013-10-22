@@ -22,6 +22,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "iPadLaunchPortrait.png",
       "scale" : "1x"
     },
     {
@@ -29,6 +30,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "ipadLaunchLandscape.png",
       "scale" : "1x"
     },
     {
@@ -36,6 +38,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "iPadLaunchPortrait@2x.png",
       "scale" : "2x"
     },
     {
@@ -43,6 +46,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "ipadLaunchLandscape@2x.png",
       "scale" : "2x"
     },
     {
@@ -55,12 +59,14 @@
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
+      "filename" : "default@2x-1.png",
       "scale" : "2x"
     },
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
+      "filename" : "default@2x-Tall-1.png",
       "subtype" : "retina4",
       "scale" : "2x"
     },
@@ -68,48 +74,56 @@
       "orientation" : "portrait",
       "idiom" : "ipad",
       "extent" : "to-status-bar",
+      "filename" : "iOS6iPadLaunchPortrait.png",
       "scale" : "1x"
     },
     {
       "orientation" : "portrait",
       "idiom" : "ipad",
       "extent" : "full-screen",
+      "filename" : "iPadLaunchPortrait-1.png",
       "scale" : "1x"
     },
     {
       "orientation" : "landscape",
       "idiom" : "ipad",
       "extent" : "to-status-bar",
+      "filename" : "iOS6ipadLaunchLandscape.png",
       "scale" : "1x"
     },
     {
       "orientation" : "landscape",
       "idiom" : "ipad",
       "extent" : "full-screen",
+      "filename" : "ipadLaunchLandscape-1.png",
       "scale" : "1x"
     },
     {
       "orientation" : "portrait",
       "idiom" : "ipad",
       "extent" : "to-status-bar",
+      "filename" : "iOS6iPadLaunchPortrait@2x.png",
       "scale" : "2x"
     },
     {
       "orientation" : "portrait",
       "idiom" : "ipad",
       "extent" : "full-screen",
+      "filename" : "iPadLaunchPortrait@2x-1.png",
       "scale" : "2x"
     },
     {
       "orientation" : "landscape",
       "idiom" : "ipad",
       "extent" : "to-status-bar",
+      "filename" : "iOS6ipadLaunchLandscape@2x.png",
       "scale" : "2x"
     },
     {
       "orientation" : "landscape",
       "idiom" : "ipad",
       "extent" : "full-screen",
+      "filename" : "ipadLaunchLandscape@2x-1.png",
       "scale" : "2x"
     }
   ],

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A09C2C81814B2C30061D0C9 /* iPadNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09C2C61814B2C30061D0C9 /* iPadNumberPad.m */; };
+		9A09C2C91814B2C30061D0C9 /* iPadNumberPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A09C2C71814B2C30061D0C9 /* iPadNumberPad.xib */; };
 		9A5AB6D217F65017000BF5C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5AB6D117F65017000BF5C3 /* Foundation.framework */; };
 		9A5AB6D417F65017000BF5C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5AB6D317F65017000BF5C3 /* CoreGraphics.framework */; };
 		9A5AB6D617F65017000BF5C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5AB6D517F65017000BF5C3 /* UIKit.framework */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A09C2C51814B2C30061D0C9 /* iPadNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iPadNumberPad.h; path = iPad/iPadNumberPad.h; sourceTree = "<group>"; };
+		9A09C2C61814B2C30061D0C9 /* iPadNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iPadNumberPad.m; path = iPad/iPadNumberPad.m; sourceTree = "<group>"; };
+		9A09C2C71814B2C30061D0C9 /* iPadNumberPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = iPadNumberPad.xib; path = iPad/iPadNumberPad.xib; sourceTree = "<group>"; };
 		9A5AB6CE17F65017000BF5C3 /* Quick Quadratic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Quadratic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5AB6D117F65017000BF5C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9A5AB6D317F65017000BF5C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -172,6 +177,9 @@
 		9A5AB70817F6555B000BF5C3 /* Number Pad */ = {
 			isa = PBXGroup;
 			children = (
+				9A09C2C51814B2C30061D0C9 /* iPadNumberPad.h */,
+				9A09C2C61814B2C30061D0C9 /* iPadNumberPad.m */,
+				9A09C2C71814B2C30061D0C9 /* iPadNumberPad.xib */,
 				9A5AB70917F6557D000BF5C3 /* NumberPad.h */,
 				9A5AB70A17F6557D000BF5C3 /* NumberPad.m */,
 				9A5AB70B17F6557D000BF5C3 /* NumberPad.xib */,
@@ -276,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A09C2C91814B2C30061D0C9 /* iPadNumberPad.xib in Resources */,
 				9AFCB5BF17F7241800D38F15 /* Main-iPad.storyboard in Resources */,
 				9A5AB70D17F6557D000BF5C3 /* NumberPad.xib in Resources */,
 				9A5AB6EA17F65017000BF5C3 /* Images.xcassets in Resources */,
@@ -301,6 +310,7 @@
 			files = (
 				9A5AB70C17F6557D000BF5C3 /* NumberPad.m in Sources */,
 				9A5AB6DE17F65017000BF5C3 /* main.m in Sources */,
+				9A09C2C81814B2C30061D0C9 /* iPadNumberPad.m in Sources */,
 				9A5AB6E817F65017000BF5C3 /* QuadraticViewController.m in Sources */,
 				9A5AB71117F65625000BF5C3 /* QuadraticSolve.m in Sources */,
 				9A5AB6E217F65017000BF5C3 /* QuadraticAppDelegate.m in Sources */,
